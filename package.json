@@ -1,1 +1,13 @@
+{
+  "name": "walking-skeleton-tdd",
+  "version": "1.0.0",
+  "description": "Walking Skeleton with Jest unit test",
+  "main": "login.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
 
