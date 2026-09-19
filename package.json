@@ -1,8 +1,6 @@
 {
-  "name": "walking-skeleton-tdd",
+  "name": "vlu-qe-walking-skeleton",
   "version": "1.0.0",
-  "description": "Walking Skeleton with Jest unit test",
-  "main": "login.js",
   "scripts": {
     "test": "jest"
   },
@@ -10,4 +8,3 @@
     "jest": "^29.7.0"
   }
 }
-
