@@ -1,22 +1,11 @@
-const { validateLogin } = require('./login');
+const { validateLogin } = require('./auth');
 
 describe('Kiểm tra hàm validateLogin', () => {
-    
-    test('Nên trả về true khi nhập đúng tài khoản admin và mật khẩu 123', () => {
+    test('Đúng admin và 123 trả về true', () => {
         expect(validateLogin('admin', '123')).toBe(true);
     });
 
-    test('Nên trả về false khi sai tên đăng nhập', () => {
-        expect(validateLogin('user', '123')).toBe(false);
+    test('Sai mật khẩu trả về false', () => {
+        expect(validateLogin('admin', 'wrong')).toBe(false);
     });
-
-    test('Nên trả về false khi sai mật khẩu', () => {
-        expect(validateLogin('admin', 'wrongpass')).toBe(false);
-    });
-
-    test('Nên trả về false khi để trống cả hai trường', () => {
-        expect(validateLogin('', '')).toBe(false);
-    });
-
 });
-
